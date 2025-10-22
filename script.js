@@ -9,7 +9,7 @@ async function getWeather() {
   try {
     const response = await fetch(url);
     if (!response.ok) throw new Error("Invalid location");
-
+// my nam is 
     const data = await response.json();
     const temp = data.current.temp_c;
     const condition = data.current.condition.text;
